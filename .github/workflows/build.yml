@@ -35,11 +35,8 @@ jobs:
       matrix:
         os: [ macos-14, macos-15, macos-15-intel, macos-26, macos-26-intel, ubuntu-24.04, ubuntu-26.04-arm ]
         compiler: [ gfortran ]
-        version: [ 13, 14, 15, 16 ] # Julienne supports GFortran 13+
+        version: [ 16 ] # Formal supports GFortran 16.2+
         extra_flags: [ -g -O3 ]
-
-        exclude:
-          - compiler: gfortran  # gfortran disabled for now
 
         include:
 
